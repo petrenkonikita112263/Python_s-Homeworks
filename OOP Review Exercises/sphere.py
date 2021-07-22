@@ -17,7 +17,7 @@ class Sphere:
         self.area_value = 4 * math.pi * self.radius ** 2
 
     def volume(self) -> None:
-        self.volume_value = (4 / 3) * math.pi * self.radius ** 2
+        self.volume_value = (4 / 3) * math.pi * self.radius ** 3
 
     def __str__(self) -> str:
         return f"The sphere with radius = {self.radius} have surface area = {self.area_value}" \
