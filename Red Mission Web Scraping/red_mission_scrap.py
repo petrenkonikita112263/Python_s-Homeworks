@@ -12,4 +12,8 @@ blog_content = soup.select(".sqs-block-content > pre")
 text = blog_content[0]
 # print(text)
 text = text.contents[0]
-print(text)
+# print(text)
+
+text.split("-----")
+result = [sentence[0] for sentence in text.split("-----")[1:]]
+print(result)
