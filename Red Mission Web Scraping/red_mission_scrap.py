@@ -16,4 +16,6 @@ text = text.contents[0]
 
 text.split("-----")
 result = [sentence[0] for sentence in text.split("-----")[1:]]
-print(result)
+# print(result)
+url_link = "".join(result)
+print(url_link)
