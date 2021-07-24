@@ -13,4 +13,4 @@ key = hash_object.digest()
 fernet_key = base64.urlsafe_b64encode(key)
 # print(fernet_key)
 cipher = Fernet(fernet_key)
-
+print(cipher.decrypt(encode_string))
