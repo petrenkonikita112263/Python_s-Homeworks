@@ -26,3 +26,10 @@ map_options = GMapOptions(lat=0, lng=0, zoom=3)
 plot = GMapPlot(x_range=Range1d(), y_range=Range1d(), map_options=map_options)
 plot.title.text = "Example Plot"
 plot.api_key = API_KEY
+
+source = ColumnDataSource(
+    data=dict(
+        lat=lats,
+        lon=longs,
+    )
+)
