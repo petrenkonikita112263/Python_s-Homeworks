@@ -39,3 +39,6 @@ circle = Circle(x="lon", y="lat", size=10, fill_color="red", fill_alpha=0.6, lin
 plot.add_glyph(source, circle)
 
 plot.add_tools(PanTool(), WheelZoomTool(), BoxSelectTool())
+
+output_file("gmap_plot.html")
+show(plot)
