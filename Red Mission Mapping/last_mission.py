@@ -6,4 +6,11 @@ with open("message_new_pen.txt") as file:
 # print(content)
 
 coordinates = re.findall(r"[\d]+.[\d]+,-[\d]+.[\d]+", content)
-print(coordinates)
+# print(coordinates)
+
+lats = []
+longs = []
+for coordinate in coordinates:
+    lat, long = coordinate.split(",")
+    lats.append(lat)
+    longs.append(long)
