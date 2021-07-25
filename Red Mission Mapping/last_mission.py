@@ -33,3 +33,5 @@ source = ColumnDataSource(
         lon=longs,
     )
 )
+
+circle = Circle(x="lon", y="lat", size=10, fill_color="red", fill_alpha=0.6, line_color=None)
