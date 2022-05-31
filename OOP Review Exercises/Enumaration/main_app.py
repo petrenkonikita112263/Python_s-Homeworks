@@ -29,3 +29,19 @@ class AppException(Enum):
     def throw(self, message=None):
         message = message or self.message
         raise self.exception(f"{self.code} - {message}")
+
+
+try:
+    AppException.Timeout.throw()
+except Exception as ex:
+    print(ex)
+
+
+try:
+    AppException.Timeout.throw("Timeout connecting to database.")
+except Exception as ex:
+    print(ex)
+
+print(list(AppException))
+
+[(ex.name, ex.code, ex.message) for ex in AppException]
